@@ -1,0 +1,21 @@
+table {
+    text-align: center;
+}
+
+table tr td , table tr th {
+    text-align: center !important;
+}
+
+
+.img-cover .buttons {
+    position: absolute;
+    padding: 19px;
+    margin: 0px 5px ;
+    width: 100%;
+    height: 100%;
+    background-color: #6259598f;
+}
+
+.display_inline {
+    display: inline;
+}
