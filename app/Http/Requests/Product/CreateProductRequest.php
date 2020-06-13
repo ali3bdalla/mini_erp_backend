@@ -40,7 +40,6 @@ class CreateProductRequest extends FormRequest
 
     public function store()
     {
-
         DB::beginTransaction();
         try {
             $product = new Product;
@@ -55,16 +54,19 @@ class CreateProductRequest extends FormRequest
             $product->price = $this->input("price");
             $product->save();
 
-            foreach ($this->file('attachments') as $key => $file){
-                $is_master = false;
-                if($key == 0)
-                    $is_master = true;
+            if($this->has('attachments') && $this->filled('attachments')) {
 
-                $path = $file->store('attachments');
-                $product->attachments()->create([
-                    'url' => $path,
-                    'is_master' => $is_master
-                ]); // save to database
+                foreach ($this->file('attachments') as $key => $file) {
+                    $is_master = false;
+                    if ($key == 0)
+                        $is_master = true;
+
+                    $path = $file->store('attachments');
+                    $product->attachments()->create([
+                        'url' => $path,
+                        'is_master' => $is_master
+                    ]); // save to database
+                }
             }
             DB::commit();
             event(new ProductHasBeenCreatedEvent($product));

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="681584d2-404f-4233-917a-9e476e602012" name="Default Changelist" comment="" />
+    <list default="true" id="681584d2-404f-4233-917a-9e476e602012" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/testing_data/Screen Shot 1441-10-20 at 5.58.11 PM 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/testing_data/Screen Shot 1441-10-20 at 5.58.11 PM 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/testing_data/Screen Shot 1441-10-20 at 5.58.12 PM 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/testing_data/Screen Shot 1441-10-20 at 5.58.12 PM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Product/CreateProductRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Product/CreateProductRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Product/UpdateProductRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Product/UpdateProductRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +27,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MessDetectorBlackList">
     <option name="filePaths">
@@ -125,14 +142,17 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1dBnF7dpYUAMSrbXoxkdMFs7ADr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/testing_data" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/testing_data" />
       <recent name="$PROJECT_DIR$/resources/lang" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -167,12 +187,26 @@
       <updated>1591907246101</updated>
       <workItem from="1591907247231" duration="565000" />
       <workItem from="1591907978820" duration="11621000" />
-      <workItem from="1591965665877" duration="7557000" />
+      <workItem from="1591965665877" duration="7782000" />
+      <workItem from="1592036630881" duration="3319000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

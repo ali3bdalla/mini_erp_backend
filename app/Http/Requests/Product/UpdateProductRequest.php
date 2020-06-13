@@ -53,29 +53,32 @@ class UpdateProductRequest extends FormRequest
             $product->price = $this->input("price");
             $product->update();
 
-            foreach ($this->file('attachments') as $key => $file){
-                $is_master = false;
-                if($key == 0)
-                    $is_master = true;
+            if($this->has('attachments') && $this->filled('attachments'))
+            {
+                foreach ($this->file('attachments') as $key => $file){
+                    $is_master = false;
+                    if($key == 0)
+                        $is_master = true;
 
-                $path = $file->store('attachments');
-                $product->attachments()->create([
-                    'url' => $path,
-                    'is_master' => $is_master
-                ]); // save to database
+                    $path = $file->store('attachments');
+                    $product->attachments()->create([
+                        'url' => $path,
+                        'is_master' => $is_master
+                    ]); // save to database
+                }
             }
 
 
             DB::commit();
 
             event(new ProductHasBeenUpdatedEvent($product));
-
             return redirect(route('products.edit',$product->id));
         }
         catch (\Exception $exception)
         {
+
             DB::rollBack();
-            return back()->withErrors();
+            return back()->withErrors([]);
         }
 
     }
